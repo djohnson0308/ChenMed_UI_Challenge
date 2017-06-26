@@ -1,0 +1,684 @@
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url('../fonts/Gotham-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Gotham-Pro";
+  src: url('../fonts/Gotham-Pro.otf') format('truetype');
+}
+@font-face {
+  font-family: "Gotham-Light";
+  src: url('../fonts/Gotham-Pro-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/*----- Top Header ------*/
+#top-nav {
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom: none;
+}
+.header-brand {
+  list-style-type: none;
+  display: inline-flex;
+  padding-top: 8px;
+  padding-left: 0px;
+}
+.ion-person {
+  margin-right: 45px;
+}
+.doctor {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.doctor span {
+  font: 16px "Gotham-Pro", Arial, Helvetica, sans-serif;
+  color: #004750;
+}
+.sub-item {
+  margin-top: -7px;
+}
+.sub-text {
+  font-size: 12px !important;
+  color: #9B9B9B !important;
+}
+.ion-more-icon {
+  margin-top: -5px;
+}
+#top-nav .ion-android-more-vertical {
+  font-size: 20px;
+  color: #4c9e9d;
+  margin-left: 15px;
+}
+.zen-notes-img {
+  padding-top: 15px;
+}
+
+/*----- Patient Info Section ------*/
+#header {
+  background-color: #007573;
+  /*background-color: #006967;*/
+}
+#user-info {
+  margin-top: 19px;
+  margin-bottom: 17px;
+}
+#user-pic {
+  padding-right: 0px;
+}
+#user-pic img {
+  /*height: 194px;
+  width: 194px;*/
+}
+.patient-name {
+  padding-right: 0px;
+}
+.patient-name h3 {
+  font: 45px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.patient-name .list-inline {
+  margin-top: -10px;
+  margin-bottom: 12px;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  .patient-name h3 {
+    font: 30px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+/* Large-Tablets (Ipad-Pro) */
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+  .patient-name h3 {
+    font: 40px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .btn-sm {
+    padding: 2px 10px 4px 9px;
+  }
+  .hpp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .snp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .allergies {
+    font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
+.med-icons {
+  padding-top: 9px;
+}
+.med-icons a {
+  font-size: 23px;
+  color: #004750;
+}
+.patient-name a:hover {
+  text-decoration: none;
+  color: #003f48;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.btn-sm {
+  padding: 2px 10px 4px 9px;
+}
+.hpp-btn {
+  font: 11px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+  background-color: #004750;
+  margin-top: -9px;
+}
+.hpp-btn:hover {
+  color: #ffffff;
+  background-color: #003f48;
+}
+.hpp-btn:focus {
+  color: #ffffff;
+  background-color: #003f48;
+}
+.snp-btn {
+  font: 11px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+  background-color: #004750;
+  margin-top: -9px;
+}
+.snp-btn:hover {
+  color: #ffffff;
+  background-color: #003f48;
+}
+.snp-btn:focus {
+  color: #ffffff;
+  background-color: #003f48;
+}
+.allergies {
+  font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.reported {
+  color: #6CC04A;
+  margin-left: 20px;
+}
+.data-type {
+  font: 14px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+}
+.data-output {
+  font: 14px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+  color: rgba(210, 210, 210, .8);
+}
+.data-type-2 {
+  font: 16px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+  padding-right: 14px;
+}
+.data-output-2 {
+  font: 15px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+  color: rgba(210, 210, 210, .8);
+  padding-left: 0px;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  .data-type {
+    font: 10px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+  }
+  .data-output {
+    font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+    color: rgba(210, 210, 210, .8);
+  }
+}
+.med-table {
+  font: 13px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+  color: #ffffff;
+  background-color: #003f48;
+  border-radius: 3px;
+}
+.table>thead>tr>th {
+  padding: 7px 0px 0px 12px !important;
+  border: none !important;
+}
+.table>tbody>tr>td {
+  font: 13px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+  color: #D2D2D2;
+  padding: 0px 0px 9px 12px !important;
+  border: none !important;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  .med-table {
+    font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    background-color: #003f48;
+    border-radius: 3px;
+  }
+  .table>tbody>tr>td {
+    font: 10px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #D2D2D2;
+    padding: 0px 0px 9px 12px;
+  }
+}
+
+/*----- Middle Navbar -----*/
+#mid-nav {
+  background-color: #dbdbdb;
+  border-top: none;
+  border-bottom: none;
+  height: 46px;
+  margin-bottom: 0px;
+}
+#mid-nav li {
+  height: 46px;
+}
+#mid-nav a {
+  font: 18px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  color: #003f48;
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+#mid-nav a:hover {
+  color: #003239;
+  box-shadow: 0 3px #68bd46 inset;
+}
+#mid-nav .active a {
+  color: #ffffff !important;
+  background-color: #003f48 !important;
+  box-shadow: none;
+}
+.preview {
+  font-size: 15px !important;
+  color: #6CC04A !important;
+}
+.preview:hover {
+  box-shadow: none !important;
+}
+.sign-off {
+  font-size: 15px !important;
+  box-shadow: none;
+}
+.sign-off:hover {
+  box-shadow: none !important;
+}
+.divider {
+  font-size: 15px;
+  color: #a8a8a8;
+  padding-top: 10px !important;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  .navbar {
+    min-height: 25px;
+  }
+  #mid-nav {
+    background-color: #dbdbdb;
+    border-top: none;
+    border-bottom: none;
+    height: 45px;
+    margin-bottom: 0px;
+  }
+  #mid-nav a {
+    font: 12px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+    color: #003f48;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  .preview {
+    font-size: 8px !important;
+    color: #6CC04A !important;
+  }
+  .sign-off {
+    font-size: 8px !important;
+    box-shadow: none;
+  }
+}
+/* Large-Tablets */
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+  #mid-nav a {
+    font: 16px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+    color: #003f48;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  .preview {
+    font-size: 14px !important;
+    color: #6CC04A !important;
+  }
+  .sign-off {
+    font-size: 14px !important;
+    box-shadow: none;
+  }
+}
+/*----- Nav Links -----*/
+
+#nav-links {
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
+  margin-bottom: 0px;
+  height: 46px;
+}
+#nav-links a {
+  font: 18px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #4c9e9d;
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+#nav-links a:hover {
+  color: #007573;
+}
+#nav-links .active a {
+  font: 18px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  color: #003f48;
+  background: transparent;
+}
+#line-break {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#line-break hr {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  #nav-links a {
+    font: 12px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+    color: #4c9e9d;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  #nav-links .active a {
+    font: 12px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+    color: #003f48;
+    background: transparent;
+  }
+}
+
+/*----- Page Content -----*/
+#page-content .well {
+  background-color: #f9f9f9;
+}
+#page-content h4 {
+  font: 16px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  color: #003f48;
+  margin-top: 0px;
+}
+/*----- Subjective Form -----*/
+.subjective-form {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  border: none;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+input {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  padding: 10px 10px 10px 0px;
+  margin-bottom: 100px;
+  display: block;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid #d6d6d6;
+  background: transparent;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bebebe;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #bebebe;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #bebebe;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #bebebe;
+}
+input:focus {
+  outline: none;
+}
+.add-to-fav {
+  text-align: right;
+}
+.subjective-form button {
+  font: 12px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  background-color: #006967;
+  border-color: #006967;
+  padding: 18px 20px;
+  transition: .5s;
+}
+.subjective-form button:hover {
+  background-color: #197876;
+  border-color: #197876;
+  transition: .5s;
+}
+.subjective-form button:focus {
+  background-color: #197876 !important;
+  border-color: #197876 !important;
+}
+.subjective-form button:active {
+  background-color: #006967 !important;
+  border-color: #006967 !important;
+}
+
+/*----- Chief Complaint Well -----*/
+.chief-complaint {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  line-height: 22px;
+  border: none;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.chief-complaint p {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 15px;
+}
+.chief-complaint .header {
+  margin-bottom: 5px;
+}
+.chief-complaint .more-icon {
+  font-size: 30px;
+  color: #979797;
+  text-align: right;
+  padding-right: 14px;
+  margin-top: -10px;
+}
+.chief-complaint-text {
+  padding-right: 8px;
+}
+
+/*----- Acute Problems Well -----*/
+.acute-problems {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  line-height: 22px;
+  border: none;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.acute-problems p {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 15px;
+}
+.acute-problems .header {
+  margin-bottom: 5px;
+}
+.acute-problems .more-icon {
+  font-size: 30px;
+  color: #979797;
+  text-align: right;
+  padding-right: 14px;
+  margin-top: -10px;
+}
+.acute-problems-text {
+  padding-right: 8px;
+}
+
+/*----- Practice Phrases Well -----*/
+.phrases {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  line-height: 22px;
+  border: none;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.phrases .header {
+  margin-bottom: 5px;
+}
+.phrases .more-icon {
+  font-size: 30px;
+  color: #979797;
+  text-align: right;
+  padding-right: 16px;
+  margin-top: -10px;
+}
+.practice-phrases {
+  padding-right: 0px;
+}
+.doctor-phrases {
+  margin-top: -12px;
+}
+.doctor-phrases h4 {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif !important;
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.border-top {
+  border-bottom: 1px solid #d6d6d6;
+  height: 10px;
+  margin-right: 27px;
+}
+.d3 {
+   height: 200px;;
+   position: relative;
+}
+.d3-2{
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-right: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.d4
+{
+  position: relative;
+  max-height: 100%;
+  overflow: auto;
+}
+.d5 {
+    height:400px;
+}
+.notes {
+  border-bottom: 1px solid #d6d6d6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+.phrases ::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 7px;
+  border-radius: 3px;
+}
+.phrases ::-webkit-scrollbar-track {
+}
+.phrases ::-webkit-scrollbar-track-piece  {
+}
+.phrases ::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #006967;
+}
+.phrases ::-webkit-scrollbar-thumb:window-inactive {
+	background: transparent;
+}
+
+/*----- Extend HPI Well -----*/
+.side {
+  padding-right: 0px;
+}
+.extend-hpi {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  line-height: 22px;
+  border: none;
+  padding-right: 20px;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.extend-hpi button {
+  font: 12px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  background-color: #006967;
+  border-color: #006967;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  transition: .5s;
+}
+.extend-hpi button:hover {
+  background-color: #197876;
+  border-color: #197876;
+  transition: .5s;
+}
+.extend-hpi button:focus {
+  background-color: #197876 !important;
+  border-color: #197876 !important;
+}
+.extend-hpi button:active {
+  background-color: #006967 !important;
+  border-color: #006967 !important;
+}
+.brief button {
+  color: #006967;
+  background-color: transparent;
+  border: 2px solid #006967 ;
+}
+.disclaimer p {
+  color: #bebebe;
+  font-size: 12px;
+  margin-bottom: 0px;
+  line-height: 18px;
+}
+
+/*----- Pain Assessment Well -----*/
+.pain-assessment {
+  font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  color: #2f2f2f;
+  line-height: 22px;
+  border: none;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.pain-assessment p {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 15px;
+  margin-right: 46px;
+}
+.pain-assessment .header {
+  margin-bottom: 5px;
+}
+.pain-assessment .more-icon {
+  font-size: 30px;
+  color: #979797;
+  text-align: right;
+  padding-right: 35px;
+  margin-top: -10px;
+}
+
+/*----- Footer -----*/
+.footer-bottom {
+  color: rgba(255, 255, 255, .88);
+  font: 9px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  background-color: #003f48;
+  /*height: 40px;*/
+}
+.footer-bottom .container {
+  padding: 0px;
+}
+.help {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.copyright {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
