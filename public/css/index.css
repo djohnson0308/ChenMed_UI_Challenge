@@ -84,7 +84,6 @@
 /*----- Patient Info Section ------*/
 #patient-info {
   background-color: #007573;
-  /*background-color: #006967;*/
 }
 #user-info {
   margin-top: 19px;
@@ -176,7 +175,7 @@
 }
 .data-output {
   font: 14px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
-  color: rgba(210, 210, 210, .8);
+  color: rgba(210, 210, 210, .9);
   padding-left: 0px;
 }
 .med-table {
@@ -230,7 +229,7 @@
   }
   .data-output {
     font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
-    color: rgba(210, 210, 210, .8);
+    color: rgba(210, 210, 210, .9);
   }
   .med-table {
     font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
@@ -270,6 +269,7 @@
     color: #ffffff;
   }
 }
+
 /*----- Middle Navbar -----*/
 #mid-nav {
   background-color: #dbdbdb;
@@ -359,8 +359,8 @@
     box-shadow: none;
   }
 }
-/*----- Nav Links -----*/
 
+/*----- Nav Links -----*/
 #nav-links {
   background: transparent;
   border-top: none;
@@ -473,7 +473,7 @@ input:focus {
   border-color: #006967 !important;
 }
 
-/*----- Chief Complaint Well -----*/
+/*----- Chief Complaint Form -----*/
 .chief-complaint {
   font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
   color: #2f2f2f;
@@ -501,7 +501,7 @@ input:focus {
   padding-right: 8px;
 }
 
-/*----- Acute Problems Well -----*/
+/*----- Acute Problems Form -----*/
 .acute-problems {
   font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
   color: #2f2f2f;
@@ -529,7 +529,7 @@ input:focus {
   padding-right: 8px;
 }
 
-/*----- Practice Phrases Well -----*/
+/*----- Phrases Well -----*/
 .phrases {
   font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
   color: #2f2f2f;
@@ -686,15 +686,35 @@ input:focus {
   padding-right: 35px;
   margin-top: -10px;
 }
+.body-part {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.body-part i {
+  font: 14px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+  color: #003f48;
+  background-color: #ffffff;
+  padding: 6px 8px 5px 8px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.body-part span {
+  margin-left: 10px;
+}
 
 /*----- Footer -----*/
-.footer-bottom {
+.footer {
   color: rgba(255, 255, 255, .88);
-  font: 9px "Gotham-Light", Arial, Helvetica, Sans-Serif;
+  font: 11px "Gotham-Light", Arial, Helvetica, Sans-Serif;
   background-color: #003f48;
   /*height: 40px;*/
 }
-.footer-bottom .container {
+.footer .container {
   padding: 0px;
 }
 .help {
