@@ -24,7 +24,7 @@
 }
 
 /*----- Top Header ------*/
-#top-nav {
+#top-header {
   height: 50px;
   background-color: #ffffff;
   border-bottom: none;
@@ -82,7 +82,7 @@
 }
 
 /*----- Patient Info Section ------*/
-#header {
+#patient-info {
   background-color: #007573;
   /*background-color: #006967;*/
 }
@@ -160,21 +160,22 @@
   color: #6CC04A;
   margin-left: 20px;
 }
+#patient-data {
+  padding-top: 10px;
+}
+.patient-data-row {
+  display:inline-flex;
+  list-style-type: none;
+  padding-left:0px;
+  margin-bottom:4px;
+}
 .data-type {
   font: 14px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
   color: #ffffff;
+  padding-left: 0px;
 }
 .data-output {
   font: 14px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
-  color: rgba(210, 210, 210, .8);
-}
-.data-type-2 {
-  font: 16px "Roboto-Bold", Arial, Helvetica, Sans-Serif;
-  color: #ffffff;
-  padding-right: 14px;
-}
-.data-output-2 {
-  font: 15px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
   color: rgba(210, 210, 210, .8);
   padding-left: 0px;
 }
@@ -203,8 +204,24 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .med-icons a {
+    font-size: 21px;
+    color: #004750;
+  }
+  .hpp-btn {
+    font: 7px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .snp-btn {
+    font: 7px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
   .allergies {
-    font: 8px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    font: 9px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
     color: #ffffff;
   }
   .data-type {
@@ -234,9 +251,6 @@
     color: #ffffff;
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-  .btn-sm {
-    padding: 2px 10px 4px 9px;
   }
   .hpp-btn {
     font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;

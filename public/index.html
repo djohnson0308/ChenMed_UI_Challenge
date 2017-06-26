@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/ionicons.css">
 </head>
   <body>
-    <div class="fixed-top-section">
-    <div class="top-header" id="top-nav">
+
+    <!-- Top Header -->
+    <div id="top-header">
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-sm-6 text-left">
@@ -34,11 +35,12 @@
           <div class="zen-notes-img col-xs-6 col-sm-6 text-right">
             <a href="#"><img src="" alt="ZenNotes"></a>
           </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.top-header -->
 
-    <div class="text-center" id="header">
+    <!-- Patient Info -->
+    <div class="text-center" id="patient-info">
       <div class="container">
           <div class="row" id="user-info">
             <div class="col-sm-2" id="user-pic">
@@ -69,77 +71,47 @@
                     <li>Allergies:<span class="reported">Not reported</span></li>
                   </ul>
                 </div>
-                  <div class="col-sm-8" style="padding-top:10px;">
-                    <div class="row">
-                      <div class="data col-sm-6">
-                        <div class="row">
-                          <ul class="col-sm-12" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">MRN:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">1899231</li>
-                          </ul>
-                          <ul class="col-sm-12" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">Gender:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">Male</li>
-                          </ul>
-                          <ul class="col-sm-12" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">DOB:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">02/18/1960 (56)</li>
-                          </ul>
-                          <ul class="col-sm-12" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">Last Visit:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">06/05/2016 | Follow Up</li>
-                          </ul>
-                          <!-- <div class="data-type col-sm-4 text-right">
-                            <ul class="list-unstyled">
-                              <li>MRN:</li>
-                              <li>Gender:</li>
-                              <li>DOB:</li>
-                              <li>Last Visit:</li>
-                            </ul>
-                          </div>
-                          <div class="data-output col-sm-4 text-left">
-                            <ul class="list-unstyled">
-                              <li>1899231</li>
-                              <li>Male</li>
-                              <li>02/18/1960 (56)</li>
-                              <li>06/05/2016 | Follow Up</li>
-                            </ul>
-                          </div> -->
-                        </div>
-                      </div>
-                      <div class="data col-sm-6">
-                        <div class="row">
-                          <ul class="col-sm-12 text-right" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">Insurance:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">Wellcare (mcr)</li>
-                          </ul>
-                          <ul class="col-sm-12 text-right" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">Address:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">1410 NorthWest 175th Terrace, Miami, FL</li>
-                          </ul>
-                          <ul class="col-sm-12 text-right" style="display:inline-flex; list-style-type: none; padding-left:0px; margin-bottom:4px;">
-                            <li class="data-type col-sm-4 text-right" style="padding-left:0px">Phone:</li>
-                            <li class="data-output col-sm-8 text-left" style="padding-left:0px;">305-213-9867</li>
-                          </ul>
-                          <!-- <div class="data-type-2 col-sm-5">
-                            <ul class="list-unstyled">
-                              <li>Insurance:</li>
-                              <li>Address:</li>
-                              <li>Phone:</li>
-                            </ul>
-                          </div>
-                          <div class="data-output-2 col-sm-7 text-left">
-                            <ul class="list-unstyled">
-                              <li>Wellcare (mcr)</li>
-                              <li>1410 NorthWest 175th Terrace, Miami, FL</li>
-                              <li>305-213-9867</li>
-                            </ul>
-                          </div> -->
-                        </div>
+                <div class="col-xs-4 col-sm-8" id="patient-data">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <ul class="patient-data-row col-sm-12">
+                          <li class="data-type col-sm-4 text-right">MRN:</li>
+                          <li class="data-output col-sm-8 text-left">1899231</li>
+                        </ul>
+                        <ul class="patient-data-row col-sm-12">
+                          <li class="data-type col-sm-4 text-right">Gender:</li>
+                          <li class="data-output col-sm-8 text-left">Male</li>
+                        </ul>
+                        <ul class="patient-data-row col-sm-12">
+                          <li class="data-type col-sm-4 text-right">DOB:</li>
+                          <li class="data-output col-sm-8 text-left">02/18/1960 (56)</li>
+                        </ul>
+                        <ul class="patient-data-row col-sm-12">
+                          <li class="data-type col-sm-4 text-right">Last Visit:</li>
+                          <li class="data-output col-sm-8 text-left">06/05/2016 | Follow Up</li>
+                        </ul>
                       </div>
                     </div>
-                  </div>
-              </div><!-- /client-info row -->
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <ul class="patient-data-row col-sm-12 text-right">
+                          <li class="data-type col-sm-4 text-right">Insurance:</li>
+                          <li class="data-output col-sm-8 text-left">Wellcare (mcr)</li>
+                        </ul>
+                        <ul class="patient-data-row col-sm-12 text-right">
+                          <li class="data-type col-sm-4 text-right">Address:</li>
+                          <li class="data-output col-sm-8 text-left">1410 NorthWest 175th Terrace, Miami, FL</li>
+                        </ul>
+                        <ul class="patient-data-row col-sm-12 text-right">
+                          <li class="data-type col-sm-4 text-right">Phone:</li>
+                          <li class="data-output col-sm-8 text-left">305-213-9867</li>
+                        </ul>
+                      </div><!-- /.row -->
+                    </div><!-- /.col-sm-6 -->
+                  </div><!-- /.row -->
+                </div><!-- /.col-sm-8 #patient-data -->
+              </div><!-- /. row -->
               <div class="data-table row">
                 <div class="col-sm-12">
                   <table class="med-table table">
@@ -170,12 +142,12 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
-            </div> <!-- /col-xs-10 -->
-          </div> <!-- /row -->
-      </div> <!-- /container -->
-    </div> <!--- /header -->
+                </div><!-- /.col-sm-12 -->
+              </div><!-- /.data-table -->
+            </div> <!-- /.col-xm-10 -->
+          </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!--- /.patient-info -->
     <nav class="navbar navbar-default" id="mid-nav">
       <div class="container">
         <ul class="nav navbar-nav">
@@ -191,7 +163,7 @@
           <li class="divider"><span>|</span></li>
           <li><a class="sign-off" href="#">SIGN-OFF</a></li>
         </ul>
-      </div>
+      </div><!-- /.container -->
     </nav>
     <nav class="navbar navbar-default" id="nav-links">
       <div class="container">
@@ -204,175 +176,150 @@
           <li><a href="#">Functional Assessment</a></li>
           <li><a href="#">Advance Directives</a></li>
         </ul>
-      </div>
+      </div><!-- /.container -->
     </nav>
     <div class="container" id="line-break">
       <hr>
-    </div>
-    </div>
+    </div><!-- /.container -->
 
     <!-- Page Content -->
     <div id="page-content">
-    <div class="container">
-
+      <div class="container">
         <div class="row">
 
-            <!-- Main Left Column -->
-            <div class="col-lg-7">
+          <!-- Main Page Column -->
+          <div class="col-lg-7">
 
-                <!-- Subjective Form -->
-                <div class="subjective-form well">
-                  <h4>Subjective</h4>
-                  <form role="form">
-                      <div class="form-group">
-                        <input type="text" name="" value="" placeholder="Begin typing here">
-                      </div>
-                  </form>
-                  <div class="add-to-fav">
-                    <button type="submit" class="btn btn-primary">ADD TO FAV</button>
+            <!-- Subjective Form -->
+            <div class="subjective-form well">
+              <h4>Subjective</h4>
+              <form role="form">
+                <div class="form-group">
+                  <input type="text" name="" value="" placeholder="Begin typing here">
+                </div>
+              </form>
+              <div class="add-to-fav">
+                <button type="submit" class="btn btn-primary">ADD TO FAV</button>
+              </div>
+            </div><!-- /.subjective-form well -->
+
+            <!-- Chief Complaint Form -->
+            <div class="chief-complaint well">
+              <div class="header row">
+                <div class="col-sm-6">
+                  <h4>Chief Complaint</h4>
+                </div>
+                <div class="more-icon col-sm-6">
+                  <span class="ion-android-more-vertical"></span>
+                </div>
+              </div>
+              <div class="chief-complaint-text">
+                <p>Patient is seen as an initial patient for evaluation and management of chronic medical problems. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nibh porta, consectetur est sagittis, molestie odio. Duis nec hendrerit elit. Vestibulum egestas ante commodo nunc finibus imperdiet.</p>
+              </div>
+            </div><!-- /.chief-complaint well -->
+
+            <!-- Acute Problems Form -->
+            <div class="acute-problems well">
+              <div class="header row">
+                <div class="col-sm-6">
+                  <h4>Acute Problems</h4>
+                </div>
+                <div class="more-icon col-sm-6">
+                  <span class="ion-android-more-vertical"></span>
+                </div>
+              </div>
+              <div class="acute-problems-text">
+                <p>Patient presents Chest pain on breathing & Dizziness & Intercostal pain & Nasal congestion & Nausea & Precordial pain, also the patient is seen as an initial patient for evaluation and management of chronic medical problems. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nibh porta, consectetur est sagittis, molestie odio. Duis nec hendrerit elit. Vestibulum egestas ante commodo nunc finibus imperdiet.</p>
+              </div>
+            </div><!-- /.acute-problems well -->
+          </div><!-- /.col-lg-7 -->
+
+          <!-- Left Sidebar Column -->
+          <div class="col-md-5">
+
+            <!-- Phrases Well -->
+            <div class="phrases well">
+              <div class="d3">
+                <div class="header row">
+                  <div class="practice-phrases col-xs-4 col-sm-4">
+                    <h4>Practice Phrases</h4>
                   </div>
-                </div>
-
-                <!-- Chief Complaint Form -->
-                <div class="chief-complaint well">
-                    <div class="header row">
-                      <div class="col-sm-6">
-                        <h4>Chief Complaint</h4>
-                      </div>
-                      <div class="more-icon col-sm-6">
-                        <span class="ion-android-more-vertical"></span>
-                      </div>
-                    </div>
-                    <div class="chief-complaint-text">
-                      <p>Patient is seen as an initial patient for evaluation and management of chronic medical problems. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nibh porta, consectetur est sagittis, molestie odio. Duis nec hendrerit elit. Vestibulum egestas ante commodo nunc finibus imperdiet.</p>
-                    </div>
-                </div>
-
-                <!-- Acute Problems Form -->
-                <div class="acute-problems well">
-                    <div class="header row">
-                      <div class="col-sm-6">
-                        <h4>Acute Problems</h4>
-                      </div>
-                      <div class="more-icon col-sm-6">
-                        <span class="ion-android-more-vertical"></span>
-                      </div>
-                    </div>
-                    <div class="acute-problems-text">
-                      <p>Patient presents Chest pain on breathing & Dizziness & Intercostal pain & Nasal congestion & Nausea & Precordial pain, also the patient is seen as an initial patient for evaluation and management of chronic medical problems. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut nibh porta, consectetur est sagittis, molestie odio. Duis nec hendrerit elit. Vestibulum egestas ante commodo nunc finibus imperdiet.</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.col-lg-7-->
-
-            <!-- Sidebar Widgets Column -->
-            <div class="col-md-5">
-
-                <!-- Phrases Well -->
-                <div class="phrases well">
-                  <div class="d3">
-                    <div class="header row">
-                      <div class="practice-phrases col-xs-4 col-sm-4">
-                        <h4>Practice Phrases</h4>
-                      </div>
-                      <div class="doctor-phrases col-xs-5 col-sm-5 text-center">
-                        <h4>Doctor Phrases</h4>
-                      </div>
-                      <div class="more-icon col-sm-3">
-                        <span class="ion-android-more-vertical"></span>
-                      </div>
-                    </div>
-                    <div class="border-top">
-                    </div>
-                    <div class="d3-2">
-                      <div class="d4">
-                        <div class="d5">
-                          <div class="notes">
-                            All results and outside notes received since prior visit reviewed.
-                          </div>
-                          <div class="notes">
-                            No new or worsening symptoms
-                          </div>
-                          <div class="notes">
-                            Symptoms have worsened since last visit
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="doctor-phrases col-xs-5 col-sm-5 text-center">
+                    <h4>Doctor Phrases</h4>
                   </div>
-                </div>
-                <!-- /.well-->
-
-                <!-- Side Widget Well -->
-                <div class="extend-hpi side well">
-                    <div class="row">
-                      <div class="col-sm-12 text-center">
-                        <button type="button" class="btn btn-primary col-sm-12" name="button">EXTEND HPI</button>
-                      </div>
-                      <div class="brief col-sm-12 text-center">
-                        <button type="button" class="btn btn-primary col-sm-12" name="button">BRIEF</button>
-                      </div>
-                      <div class="disclaimer col-sm-12 text-center">
-                        <p>This will extend 4 or more History Elements Status of 3 or more Chronic Conditions</p>
-                      </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-
-                <!-- Side Widget Well -->
-                <div class="pain-assessment side well">
-                  <div class="header row">
-                    <div class="col-sm-6">
-                      <h4>Pain Assessment</h4>
-                    </div>
-                    <div class="more-icon col-sm-6">
-                      <span class="ion-android-more-vertical"></span>
-                    </div>
+                  <div class="more-icon col-sm-3">
+                    <span class="ion-android-more-vertical"></span>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div><!-- /.header row -->
+                <div class="border-top">
                 </div>
+                <div class="d3-2">
+                  <div class="d4">
+                    <div class="d5">
+                      <div class="notes">
+                        All results and outside notes received since prior visit reviewed.
+                      </div>
+                      <div class="notes">
+                        No new or worsening symptoms
+                      </div>
+                      <div class="notes">
+                        Symptoms have worsened since last visit
+                      </div>
+                    </div><!-- /.d5 -->
+                  </div><!-- /.d4 -->
+                </div><!-- /.d3-2 -->
+              </div><!-- /.d3 -->
+            </div><!-- /.phrases well -->
 
-            </div>
+            <!-- Side Widget Well -->
+            <div class="extend-hpi side well">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <button type="button" class="btn btn-primary col-sm-12" name="button">EXTEND HPI</button>
+                </div>
+                <div class="brief col-sm-12 text-center">
+                  <button type="button" class="btn btn-primary col-sm-12" name="button">BRIEF</button>
+                </div>
+                <div class="disclaimer col-sm-12 text-center">
+                  <p>This will extend 4 or more History Elements Status of 3 or more Chronic Conditions</p>
+                </div>
+              </div><!-- /.row -->
+            </div><!-- /.extend-hpi side well -->
 
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
+            <!-- Side Widget Well -->
+            <div class="pain-assessment side well">
+              <div class="header row">
+                <div class="col-sm-6">
+                  <h4>Pain Assessment</h4>
+                </div>
+                <div class="more-icon col-sm-6">
+                  <span class="ion-android-more-vertical"></span>
+                </div>
+              </div><!-- /.header row -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+            </div><!-- /.pain-assessment side well -->
+          </div><!-- /.col-md-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
 
       <div class="footer-bottom navbar-static-bottom">
-
       	<div class="container">
-
       		<div class="row">
-
       			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
       				<div class="help">
-
                 <i class="fa fa-h-square" aria-hidden="true"></i> Help and Information
-
       				</div>
-
       			</div>
-
       			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
-
       				<div class="copyright">
-
                 <i class="fa fa-registered" aria-hidden="true"></i> ChenMed. All Rights Reserved.
-
       				</div>
-
       			</div>
+      		</div><!-- /.row -->
+      	</div><!-- /.container -->
+      </div><!-- /.footer-bottom -->
 
-      		</div>
-          <!-- /.row -->
-      	</div>
-        <!-- /.container -->
-      </div>
-    </div>
-
+    </div><!-- /#page-content -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/f4b1faab2c.js"></script>
