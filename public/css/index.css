@@ -24,6 +24,9 @@
 }
 
 /*----- Top Header ------*/
+.navbar-default {
+  border: none;
+}
 #top-header {
   height: 50px;
   background-color: #ffffff;
@@ -64,10 +67,38 @@
 .zen-notes-img {
   padding-top: 15px;
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {
+/* smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  .doctor-img {
+    margin-top: 3px;
+  }
+  .ion-person {
+    margin-right: 15px;
+  }
   .doctor span {
-    font: 14px "Gotham-Pro", Arial, Helvetica, sans-serif;
+    font: 9px "Gotham-Pro", Arial, Helvetica, sans-serif;
+    color: #004750;
+  }
+  .sub-item {
+    margin-top: -12px;
+  }
+  .sub-text {
+    font-size: 6px !important;
+    color: #9B9B9B !important;
+  }
+  .ion-more-icon {
+    margin-top: 0px;
+  }
+  #top-header .ion-android-more-vertical {
+    font-size: 10px;
+    color: #007573;
+    margin-left: 15px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) and (min-width : 768px) {
+  .doctor span {
+    font: 14px "Gotham-Pro", Arial, Helvetica, sans-serif !important;
     color: #004750;
   }
   .sub-text {
@@ -194,7 +225,15 @@
   padding: 0px 0px 9px 12px !important;
   border: none !important;
 }
-
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  .patient-name h3 {
+    font: 16px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
+  }
+  .med-icons a {
+    font-size: 10px !important;
+  }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 992px) {
   .patient-name h3 {
