@@ -64,6 +64,22 @@
 .zen-notes-img {
   padding-top: 15px;
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px) {
+  .doctor span {
+    font: 14px "Gotham-Pro", Arial, Helvetica, sans-serif;
+    color: #004750;
+  }
+  .sub-text {
+    font-size: 10px !important;
+    color: #9B9B9B !important;
+  }
+  #top-nav .ion-android-more-vertical {
+    font-size: 18px;
+    color: #4c9e9d;
+    margin-left: 15px;
+  }
+}
 
 /*----- Patient Info Section ------*/
 #header {
@@ -77,10 +93,6 @@
 #user-pic {
   padding-right: 0px;
 }
-#user-pic img {
-  /*height: 194px;
-  width: 194px;*/
-}
 .patient-name {
   padding-right: 0px;
 }
@@ -93,44 +105,6 @@
 .patient-name .list-inline {
   margin-top: -10px;
   margin-bottom: 12px;
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {
-  .patient-name h3 {
-    font: 30px "Roboto-Light", Arial, Helvetica, Sans-Serif;
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-/* Large-Tablets (Ipad-Pro) */
-@media only screen and (max-width : 1200px) and (min-width : 992px) {
-  .patient-name h3 {
-    font: 40px "Roboto-Light", Arial, Helvetica, Sans-Serif;
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .btn-sm {
-    padding: 2px 10px 4px 9px;
-  }
-  .hpp-btn {
-    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
-    color: #ffffff;
-    background-color: #004750;
-    margin-top: -9px;
-  }
-  .snp-btn {
-    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
-    color: #ffffff;
-    background-color: #004750;
-    margin-top: -9px;
-  }
-  .allergies {
-    font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
-    font-size: 14px;
-    color: #ffffff;
-  }
 }
 .med-icons {
   padding-top: 9px;
@@ -179,8 +153,7 @@
   background-color: #003f48;
 }
 .allergies {
-  font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
-  font-size: 14px;
+  font: 14px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
   color: #ffffff;
 }
 .reported {
@@ -205,17 +178,6 @@
   color: rgba(210, 210, 210, .8);
   padding-left: 0px;
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {
-  .data-type {
-    font: 10px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
-    color: #ffffff;
-  }
-  .data-output {
-    font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
-    color: rgba(210, 210, 210, .8);
-  }
-}
 .med-table {
   font: 13px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
   color: #ffffff;
@@ -232,8 +194,27 @@
   padding: 0px 0px 9px 12px !important;
   border: none !important;
 }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 992px) {
+  .patient-name h3 {
+    font: 30px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .allergies {
+    font: 8px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+  }
+  .data-type {
+    font: 10px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+  }
+  .data-output {
+    font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
+    color: rgba(210, 210, 210, .8);
+  }
   .med-table {
     font: 10px "Roboto-Regular", Arial, Helvetica, Sans-Serif;
     color: #ffffff;
@@ -246,7 +227,35 @@
     padding: 0px 0px 9px 12px;
   }
 }
-
+/* Large-Tablets (Ipad-Pro) */
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+  .patient-name h3 {
+    font: 40px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .btn-sm {
+    padding: 2px 10px 4px 9px;
+  }
+  .hpp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .snp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .allergies {
+    font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
 /*----- Middle Navbar -----*/
 #mid-nav {
   background-color: #dbdbdb;
