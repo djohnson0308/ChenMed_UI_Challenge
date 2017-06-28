@@ -155,10 +155,12 @@
 .med-icons a {
   font-size: 23px;
   color: #004750;
+  transition: all 200ms ease-in-out;
 }
 .patient-name a:hover {
   text-decoration: none;
   color: #003f48;
+  transition: all 200ms ease-in-out;
 }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: 0;
@@ -172,10 +174,13 @@
   color: #ffffff;
   background-color: #004750;
   margin-top: -9px;
+  transition: all 200ms ease-in-out;
 }
 .hpp-btn:hover {
   color: #ffffff;
   background-color: #003f48;
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3), 0 7px 7px 0 rgba(0,0,0,0.19);
+  transition: all 200ms ease-in-out;
 }
 .hpp-btn:focus {
   color: #ffffff;
@@ -186,10 +191,13 @@
   color: #ffffff;
   background-color: #004750;
   margin-top: -9px;
+  transition: all 200ms ease-in-out;
 }
 .snp-btn:hover {
   color: #ffffff;
   background-color: #003f48;
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3), 0 7px 7px 0 rgba(0,0,0,0.19);
+  transition: all 200ms ease-in-out;
 }
 .snp-btn:focus {
   color: #ffffff;
@@ -527,12 +535,13 @@ input:focus {
   background-color: #006967;
   border-color: #006967;
   padding: 18px 20px;
-  transition: .5s;
+  transition: all 200ms ease-in-out;
 }
 .subjective-form button:hover {
   background-color: #197876;
   border-color: #197876;
-  transition: .5s;
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3), 0 7px 7px 0 rgba(0,0,0,0.19);
+  transition: all 200ms ease-in-out;
 }
 .subjective-form button:focus {
   background-color: #197876 !important;
@@ -702,12 +711,13 @@ input:focus {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
-  transition: .5s;
+  transition: all 200ms ease-in-out;
 }
 .extend-hpi button:hover {
   background-color: #197876;
   border-color: #197876;
-  transition: .5s;
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,0.3), 0 7px 7px 0 rgba(0,0,0,0.19);
+  transition: all 200ms ease-in-out;
 }
 .extend-hpi button:focus {
   background-color: #197876 !important;
