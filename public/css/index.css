@@ -246,13 +246,30 @@
   padding: 0px 0px 9px 12px !important;
   border: none !important;
 }
-/* Smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (min-width : 320px) and (max-width : 480px)  {
+/* Large-Tablets (Ipad-Pro) */
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
   .patient-name h3 {
-    font: 16px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
+    font: 40px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  .med-icons a {
-    font-size: 10px !important;
+  .hpp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .snp-btn {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    color: #ffffff;
+    background-color: #004750;
+    margin-top: -9px;
+  }
+  .allergies {
+    font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    font-size: 14px;
+    color: #ffffff;
   }
 }
 /* Small Devices, Tablets */
@@ -310,30 +327,61 @@
     padding: 0px 0px 9px 12px;
   }
 }
-/* Large-Tablets (Ipad-Pro) */
-@media only screen and (max-width : 1200px) and (min-width : 992px) {
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  #user-pic img {
+    height: 125px;
+    margin-left: auto;
+  	margin-right: auto;
+    margin-bottom: 15px;
+  	display: block;
+  }
   .patient-name h3 {
-    font: 40px "Roboto-Light", Arial, Helvetica, Sans-Serif;
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font: 20px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
   }
-  .hpp-btn {
-    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
-    color: #ffffff;
-    background-color: #004750;
-    margin-top: -9px;
-  }
-  .snp-btn {
-    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
-    color: #ffffff;
-    background-color: #004750;
-    margin-top: -9px;
+  .left-arrow {
+    visibility: hidden;
   }
   .allergies {
-    font: 11px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
-    font-size: 14px;
-    color: #ffffff;
+    font: 8px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+  }
+  .med-icons li {
+    padding: 3px;
+  }
+  .med-icons a {
+    font-size: 11px !important;
+  }
+  .hpp-btn {
+    font: 5px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    margin-top: 2px;
+    transition: all 200ms ease-in-out;
+  }
+  .snp-btn {
+    font: 5px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    margin-top: 2px;
+  }
+  .patient-data-row {
+    padding-right: 0px;
+  }
+  .data-type {
+    font: 8px "Roboto-Bold", Arial, Helvetica, Sans-Serif !important;
+    padding-right: 0px;
+  }
+  .data-output {
+    font: 8px "Roboto-Regular", Arial, Helvetica, Sans-Serif !important;
+    color: rgba(210, 210, 210, .9);
+    padding-left: 10px;
+  }
+  .table {
+    overflow-x: auto;
+		display: block;
+  }
+  .med-table th {
+    font: 8px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
+  }
+  .table>tbody>tr>td {
+    font: 8px "Roboto-Light", Arial, Helvetica, Sans-Serif;
+    padding: 0px 0px 9px 12px;
   }
 }
 
@@ -384,6 +432,23 @@
   color: #a8a8a8;
   padding-top: 10px !important;
 }
+/* Large-Tablets */
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+  #mid-nav a {
+    font: 16px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
+    color: #003f48;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  .preview {
+    font-size: 14px !important;
+    color: #6CC04A !important;
+  }
+  .sign-off {
+    font-size: 14px !important;
+    box-shadow: none;
+  }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 992px) {
   .navbar {
@@ -411,21 +476,16 @@
     box-shadow: none;
   }
 }
-/* Large-Tablets */
-@media only screen and (max-width : 1200px) and (min-width : 992px) {
-  #mid-nav a {
-    font: 16px "Gotham-Pro", Arial, Helvetica, Sans-Serif;
-    color: #003f48;
-    padding-top: 17px;
-    padding-bottom: 16px;
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  #mid-nav-collapsed {
+    background-color: #dbdbdb;
   }
-  .preview {
-    font-size: 14px !important;
-    color: #6CC04A !important;
+  .navbar-toggle {
+    margin-bottom: 0px;
   }
-  .sign-off {
-    font-size: 14px !important;
-    box-shadow: none;
+  .divider {
+    display: none !important;
   }
 }
 
@@ -492,6 +552,18 @@
     margin-top: 310px;
   }
 }
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  #page-content {
+    margin-top: 415px;
+  }
+  #page-content h4 {
+    font-size: 13px;
+  }
+  #nav-links {
+    height: auto;
+  }
+}
 /*----- Subjective Form -----*/
 .subjective-form {
   font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
@@ -551,7 +623,12 @@ input:focus {
   background-color: #006967 !important;
   border-color: #006967 !important;
 }
-
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  input {
+    font-size: 90%;
+  }
+}
 /*----- Chief Complaint Form -----*/
 .chief-complaint {
   font: 16px "Gotham-Light", Arial, Helvetica, Sans-Serif;
@@ -654,7 +731,7 @@ input:focus {
    height: 200px;;
    position: relative;
 }
-.d3-2{
+.d3-2 {
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -664,8 +741,7 @@ input:focus {
     position: absolute;
     top: 0;
 }
-.d4
-{
+.d4 {
   position: relative;
   max-height: 100%;
   overflow: auto;
@@ -688,7 +764,12 @@ input:focus {
 .phrases ::-webkit-scrollbar-thumb:window-inactive {
 	background: transparent;
 }
-
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  .doctor-phrases h4 {
+    font-size: 13px !important;
+  }
+}
 /*----- Extend HPI Well -----*/
 .side {
   padding-right: 0px;
@@ -785,7 +866,13 @@ input:focus {
 .body-part span {
   margin-left: 10px;
 }
-
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  .well {
+    font-size: 70%;
+    line-height: 18px;
+  }
+}
 /*----- Footer -----*/
 .footer {
   color: rgba(255, 255, 255, .88);

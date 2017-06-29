@@ -47,10 +47,10 @@
               <div class="left-arrow">
                 <a href="#"><span class="ion-ios-arrow-left"></span></a>
               </div>
-              <div class="col-xs-2 col-sm-2" id="user-pic">
+              <div class="col-xs-12 col-sm-2" id="user-pic">
                 <img class="img-responsive text-center" src="images/avatar.png" alt="user-pic">
               </div>
-              <div class="col-xs-10 col-sm-10">
+              <div class="col-xs-12 col-sm-10">
                 <div class="row">
                   <div class="patient-name col-xs-4 col-sm-4 text-left">
                     <h3>Michael Smith</h3>
@@ -154,19 +154,29 @@
       </div> <!--- /.patient-info -->
       <nav class="navbar navbar-default" id="mid-nav">
         <div class="container">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Subjective</a></li>
-            <li><a href="#">Quality</a></li>
-            <li><a href="#">Physical</a></li>
-            <li><a href="#">Medications</a></li>
-            <li><a href="#">Problems</a></li>
-            <li><a href="#">Additional Notes</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="preview" href="#">PREVIEW</a></li>
-            <li class="divider"><span>|</span></li>
-            <li><a class="sign-off" href="#">SIGN-OFF</a></li>
-          </ul>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mid-nav-collapsed" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mid-nav-collapsed">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Subjective</a></li>
+              <li><a href="#">Quality</a></li>
+              <li><a href="#">Physical</a></li>
+              <li><a href="#">Medications</a></li>
+              <li><a href="#">Problems</a></li>
+              <li><a href="#">Additional Notes</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="preview" href="#">PREVIEW</a></li>
+              <li class="divider"><span>|</span></li>
+              <li><a class="sign-off" href="#">SIGN-OFF</a></li>
+            </ul>
+          </div>
         </div><!-- /.container -->
       </nav>
     </header><!-- /.navbar-fixed-top -->
@@ -211,10 +221,10 @@
             <!-- Chief Complaint Form -->
             <div class="chief-complaint well">
               <div class="header row">
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6">
                   <h4>Chief Complaint</h4>
                 </div>
-                <div class="more-icon col-sm-6">
+                <div class="more-icon col-xs-6 col-sm-6">
                   <span class="ion-android-more-vertical"></span>
                 </div>
               </div>
@@ -226,10 +236,10 @@
             <!-- Acute Problems Form -->
             <div class="acute-problems well">
               <div class="header row">
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6">
                   <h4>Acute Problems</h4>
                 </div>
-                <div class="more-icon col-sm-6">
+                <div class="more-icon col-xs-6 col-sm-6">
                   <span class="ion-android-more-vertical"></span>
                 </div>
               </div>
@@ -303,11 +313,11 @@
             <!-- Extend HPI Well -->
             <div class="extend-hpi side well">
               <div class="row">
-                <div class="col-sm-12 text-center">
-                  <button type="button" class="btn btn-primary col-sm-12" name="button">EXTEND HPI</button>
+                <div class="col-xs-12 col-sm-12 text-center">
+                  <button type="button" class="btn btn-primary col-xs-12 col-sm-12" name="button">EXTEND HPI</button>
                 </div>
-                <div class="brief col-sm-12 text-center">
-                  <button type="button" class="btn btn-primary col-sm-12" name="button">BRIEF</button>
+                <div class="brief col-xs-12 col-sm-12 text-center">
+                  <button type="button" class="btn btn-primary col-xs-12 col-sm-12" name="button">BRIEF</button>
                 </div>
                 <div class="disclaimer col-sm-12 text-center">
                   <p>This will extend 4 or more History Elements Status of 3 or more Chronic Conditions</p>
@@ -318,10 +328,10 @@
             <!-- Pain Assessment Well -->
             <div class="pain-assessment side well">
               <div class="header row">
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6">
                   <h4>Pain Assessment</h4>
                 </div>
-                <div class="more-icon col-sm-6">
+                <div class="more-icon col-xs-6 col-sm-6">
                   <span class="ion-android-more-vertical"></span>
                 </div>
               </div><!-- /.header row -->
@@ -343,12 +353,12 @@
       <div class="footer navbar-static-bottom">
       	<div class="container">
       		<div class="row">
-      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       				<div class="help">
                 <i class="fa fa-h-square" aria-hidden="true"></i> Help and Information
       				</div>
       			</div>
-      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">
+      			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
       				<div class="copyright">
                 <i class="fa fa-registered" aria-hidden="true"></i> ChenMed. All Rights Reserved.
       				</div>
