@@ -114,6 +114,17 @@
     margin-left: 15px;
   }
 }
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (min-width : 320px) and (max-width : 480px)  {
+  .navbar-fixed-top {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+}
 
 /*----- Patient Info Section ------*/
 #patient-info {
@@ -337,7 +348,7 @@
   	display: block;
   }
   .patient-name h3 {
-    font: 20px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
+    font: 19px "Roboto-Light", Arial, Helvetica, Sans-Serif !important;
   }
   .left-arrow {
     visibility: hidden;
@@ -476,8 +487,20 @@
     box-shadow: none;
   }
 }
-/* Smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (min-width : 320px) and (max-width : 480px)  {
+/* iPhone 6+ Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+  #mid-nav-collapsed {
+    background-color: #dbdbdb;
+  }
+  .navbar-toggle {
+    margin-bottom: 0px;
+  }
+  .divider {
+    display: none !important;
+  }
+}
+/* iPhone 6 Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
   #mid-nav-collapsed {
     background-color: #dbdbdb;
   }
@@ -552,10 +575,22 @@
     margin-top: 310px;
   }
 }
-/* Smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (min-width : 320px) and (max-width : 480px)  {
+/* iPhone 6+ Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
   #page-content {
-    margin-top: 415px;
+    margin-top: 475px;
+  }
+  #page-content h4 {
+    font-size: 13px;
+  }
+  #nav-links {
+    height: auto;
+  }
+}
+/* iPhone 6 Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+  #page-content {
+    margin-top: 495px;
   }
   #page-content h4 {
     font-size: 13px;
